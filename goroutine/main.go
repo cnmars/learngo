@@ -1,12 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"sync"
-)
-var wg sync.WaitGroup
+import "fmt"
 
-
-func main(){
-	fmt.Println("sdsdf")
+func main() {
+	for i := 0; i < 5; i++ {
+		fmt.Printf("This is the %d iteration\n", i)
+	}
 }
